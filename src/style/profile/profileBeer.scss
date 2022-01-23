@@ -1,0 +1,36 @@
+.profile-beer{
+  margin-top: 30px;
+  width: 100%;
+}
+.profile-beer__title{
+  font-size: 1.5em;
+  text-align: center;
+}
+.profile-beer__name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+.profile-beer__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0 0;
+}
+.profile-beer__list{
+  padding: 20px;
+  border: 5px solid $white;
+  border-radius: 20px;
+  width: 450px;
+}
+.profile-beer__item{
+  width: 100%;
+}
+@media screen and (max-width:480px) {
+  .profile-beer__list{
+    padding: 20px 10px 20px;
+    width: 300px;
+  }
+}

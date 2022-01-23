@@ -1,0 +1,47 @@
+@import './nullstyle.scss';
+@import './vars';
+@import './mixins';
+@import './fonts.scss';
+
+@import './ui/AppSkeletonBox.scss';
+@import './ui/buttons.scss';
+
+@import './profile/profile.scss';
+@import './profile/profileHeader.scss';
+@import './profile/profileAbout.scss';
+@import './profile/profileBeer.scss';
+
+[v-cloak] {
+  display: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $white;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+  background-color: $black;
+}
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1em;
+}
+.card{
+  background-color: $dark;
+  border-radius:20px;
+  box-shadow:3px 3px 10px 0px rgb(0, 0, 0);
+  margin: 30px 0;
+  padding: 30px 20px 35px;
+}
+
+@media screen and (max-width:480px) {
+  body{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:384px) {
+  .card{
+    padding: 30px 10px 35px;
+  }
+}

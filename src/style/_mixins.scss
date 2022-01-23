@@ -1,0 +1,14 @@
+@mixin btn($color) {
+  background-color: $color;
+  text-transform: uppercase;
+  padding: 14px 20px 17px;
+  margin-top: 15px;
+  font-size: 1em;
+  color: $white;
+  border-radius: 60px;
+  white-space: nowrap;
+  &:hover{
+    background-color: transparentize($color, .1);
+    transition: background-color .3s ease;
+  }
+}
